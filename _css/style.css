@@ -24,12 +24,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 60px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 46, 78, 0.85) 0%,
-    rgba(12, 26, 36, 0.5) 60%,
-    rgba(12, 26, 36, 0.0) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 46, 78, 0.85) 0%,
+      rgba(12, 26, 36, 0.5) 60%,
+      rgba(12, 26, 36, 0.0) 100%);
   position: relative;
   z-index: 10;
 }
@@ -141,7 +139,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.card > * {
+.card>* {
   position: relative;
   z-index: 2;
 }
@@ -227,7 +225,7 @@ h2 {
 }
 
 .about-text-v2 p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -258,4 +256,66 @@ h2 {
   display: block;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* --- ESTATISTICAS --- */
+.estatisticas-section {
+  background-image: url('/_img/estatisticas/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+.estatisticas-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.732);
+  z-index: 1;
+}
+
+.estatisticas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.estatistica-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.estatistica-item i {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.estatistica-item .numero {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.estatistica-item .descricao {
+  font-size: 1.1em;
+  opacity: 0.8;
 }
