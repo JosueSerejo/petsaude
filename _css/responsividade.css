@@ -1,0 +1,158 @@
+/* --- ESTILOS GERAIS PARA O MENU HAMBURGER --- */
+.hamburger-menu {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 20;
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Telas de até 992px */
+@media (max-width: 992px) {
+  .card {
+    width: calc(33.333% - 14px); 
+  }
+}
+
+/* Telas de até 850px*/
+@media (max-width: 850px) {
+
+  /* EMPILHAR O SOBRE */
+  .about-container-v2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-text-v2 {
+    padding-right: 0;
+  }
+
+  .about-text-v2::after {
+    display: none;
+  }
+
+  .about-single-image {
+    margin-top: 20px;
+    width: 100%;
+    min-width: unset;
+    height: auto;
+  }
+
+  .about-single-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Telas de até 768px */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 46, 78, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    height: 200px;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .title h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .cards-container {
+    padding: 0 10px;
+  }
+
+  .card {
+    width: calc(50% - 15px); 
+  }
+}
+
+/* Telas de até 480px */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-links.active {
+    height: 180px;
+    padding: 15px 0;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .card {
+    width: 95%; 
+    min-width: unset;
+  }
+}
