@@ -17,7 +17,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Animação do menu aberto (X) */
 .hamburger-menu.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -39,7 +38,7 @@
   }
 }
 
-/* Até 850px: empilha seção "sobre" */
+/* Até 850px*/
 @media (max-width: 850px) {
   .about-container-v2 {
     flex-direction: column;
@@ -61,7 +60,7 @@
   }
 }
 
-/* Até 768px: ativar menu hamburger + ajustes gerais */
+/* Até 768px: ativar menu hamburger */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;

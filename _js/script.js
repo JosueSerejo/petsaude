@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             if (link.getAttribute('href') === "#") e.preventDefault();
 
-            // Ativa o link clicado e desativa os demais
+            // ------- ATIVA O LINK CLICADO -----
             navLinksList.forEach(l => l.classList.remove('ativo'));
             link.classList.add('ativo');
 
-            // Fecha o menu hamburguer (em telas pequenas)
+            // --------- FECHA O MENU HAMBÚRGUER SE ESTIVER ABERTO -----
             if (navLinksContainer.classList.contains('active')) {
                 navLinksContainer.classList.remove('active');
                 hamburgerMenu.classList.remove('active');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburgerMenu.classList.toggle('active');
         });
 
-        // Fecha o menu se clicar fora dele
+        // --------- FECHA DO MENU AO CLICAR FORA -------
         document.addEventListener('click', (event) => {
             const clickForaMenu = !navLinksContainer.contains(event.target) && !hamburgerMenu.contains(event.target);
             if (navLinksContainer.classList.contains('active') && clickForaMenu) {
@@ -88,20 +88,21 @@ link.addEventListener('click', (e) => {
     }
 });
 
+// ---- MODAL DE ATUAÇÃO ---
 
- function abrirModal(id) {
+function abrirModal(id) {
     document.getElementById(id).style.display = "block";
-  }
+}
 
-  function fecharModal(id) {
+function fecharModal(id) {
     document.getElementById(id).style.display = "none";
-  }
+}
 
-  window.onclick = function(event) {
+window.onclick = function (event) {
     const modais = document.querySelectorAll('.modal-atuacao');
     modais.forEach(modal => {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
     });
-  }
+}

@@ -19,7 +19,7 @@ O presente projeto consiste em uma **Landing Page** desenvolvida como parte do p
 
 ## 🌐 Página Publicada (Live Demo)
 
-🚀 [Acesse a landing page online](https://petsaude.onrender.com)
+🌐 [Acesse a landing page online](https://petsaude.onrender.com)
 
 
 ## Como Rodar Localmente
@@ -31,7 +31,7 @@ O presente projeto consiste em uma **Landing Page** desenvolvida como parte do p
 2. Utilize o LiveServer para visualizar a LadingPage
 
 
-# Desafios enfrentados
+## Desafios enfrentados
 
 O principal desafio foi conciliar o curto prazo com a necessidade de aplicar boas práticas de responsividade e acessibilidade, algumas implementações como um card interativo não foi possível realizar. A identidade visual foi pensada de acordo com a logo com uso de tons de azul, laranja e preto.
 
