@@ -127,6 +127,11 @@ header::before {
   margin: 0 auto;
 }
 
+.cards-container a{
+  border: white solid 1px;
+  color: white;
+}
+
 .card {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
