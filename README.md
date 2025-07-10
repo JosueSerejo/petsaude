@@ -17,7 +17,7 @@ O presente projeto consiste em uma **Landing Page** desenvolvida como parte do p
 
 🔗 [Acesse o código no GitHub](https://github.com/JosueSerejo/petsaude.git)
 
-## 🌐 Página Publicada (Live Demo)
+## Página Publicada (Live Demo)
 
 🌐 [Acesse a landing page online](https://petsaude.onrender.com)
 
