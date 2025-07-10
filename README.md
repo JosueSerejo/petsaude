@@ -33,6 +33,6 @@ O presente projeto consiste em uma **Landing Page** desenvolvida como parte do p
 
 ## Desafios enfrentados
 
-O principal desafio foi conciliar o curto prazo com a necessidade de aplicar boas práticas de responsividade e acessibilidade, algumas implementações como um card interativo não foi possível realizar. A identidade visual foi pensada de acordo com a logo com uso de tons de azul, laranja e preto.
+O principal desafio foi conciliar o curto prazo com a necessidade de aplicar boas práticas de responsividade e acessibilidade, algumas implementações como um card carrossel interativo e botão de scroll up da página não foram possíveis de realizar. A identidade visual foi pensada de acordo com a logo com uso de tons de azul, laranja e preto.
 
 
