@@ -122,63 +122,69 @@
     </div>
   </section>
 
-  
-<section class="como-atuamos-section">
-  <h2>COMO ATUAMOS</h2>
-  <div class="atuacao-container">
-    <div class="atuacao-card" onclick="abrirModal('modal1')">
-      <h3>Plataforma Digital</h3>
-      <p>Desenvolvimento e implementação tecnológica.</p>
+
+  <section class="como-atuamos-section">
+    <h2>COMO ATUAMOS</h2>
+    <div class="atuacao-container">
+      <div class="atuacao-card" onclick="abrirModal('modal1')">
+        <h3>Plataforma Digital</h3>
+        <p>Desenvolvimento e implementação tecnológica.</p>
+        <div class="ver"></div>
+      </div>
+      <div class="atuacao-card" onclick="abrirModal('modal2')">
+        <h3>Integração de Dados</h3>
+        <p>Notificações, doenças crônicas e atendimentos.</p>
+      </div>
+      <div class="atuacao-card" onclick="abrirModal('modal3')">
+        <h3>Dashboards Interativos</h3>
+        <p>Indicadores, gráficos e mapas em tempo real.</p>
+      </div>
+      <div class="atuacao-card" onclick="abrirModal('modal4')">
+        <h3>Educação em Saúde</h3>
+        <p>Materiais digitais e ações educativas.</p>
+      </div>
     </div>
-    <div class="atuacao-card" onclick="abrirModal('modal2')">
-      <h3>Integração de Dados</h3>
-      <p>Notificações, doenças crônicas e atendimentos.</p>
+  </section>
+
+  <!-- Modais -->
+  <div id="modal1" class="modal-atuacao">
+    <div class="modal-atuacao-content">
+      <span class="close-btn-atuacao" onclick="fecharModal('modal1')">&times;</span>
+      <h2>Plataforma Digital</h2>
+      <p>Desenvolvimento e implementação de uma solução digital que centraliza informações de saúde, facilita o acesso
+        por parte da população e qualifica a gestão dos atendimentos realizados pelas Unidades Básicas de Saúde (UBS).
+      </p>
     </div>
-    <div class="atuacao-card" onclick="abrirModal('modal3')">
-      <h3>Dashboards Interativos</h3>
-      <p>Indicadores, gráficos e mapas em tempo real.</p>
+  </div>
+
+  <div id="modal2" class="modal-atuacao">
+    <div class="modal-atuacao-content">
+      <span class="close-btn-atuacao" onclick="fecharModal('modal2')">&times;</span>
+      <h2>Integração de Dados</h2>
+      <p>Utilização de informações provenientes de diferentes fontes oficiais como o SINAN, e-SUS, registros de situação
+        vacinal e dados de atendimentos para oferecer uma visão completa e integrada da saúde no município.</p>
     </div>
-    <div class="atuacao-card" onclick="abrirModal('modal4')">
-      <h3>Educação em Saúde</h3>
-      <p>Materiais digitais e ações educativas.</p>
+  </div>
+
+  <div id="modal3" class="modal-atuacao">
+    <div class="modal-atuacao-content">
+      <span class="close-btn-atuacao" onclick="fecharModal('modal3')">&times;</span>
+      <h2>Dashboards Interativos</h2>
+      <p>Ferramentas visuais com indicadores-chave de saúde, gráficos dinâmicos e mapas de distribuição territorial, que
+        possibilitam a análise em tempo real da situação de saúde e apoiam a tomada de decisão.</p>
     </div>
   </div>
-</section>
 
-<!-- Modais -->
-<div id="modal1" class="modal-atuacao">
-  <div class="modal-atuacao-content">
-    <span class="close-btn-atuacao" onclick="fecharModal('modal1')">&times;</span>
-    <h2>Plataforma Digital</h2>
-    <p>Desenvolvimento e implementação de uma solução digital que centraliza informações de saúde, facilita o acesso por parte da população e qualifica a gestão dos atendimentos realizados pelas Unidades Básicas de Saúde (UBS).</p>
+  <div id="modal4" class="modal-atuacao">
+    <div class="modal-atuacao-content">
+      <span class="close-btn-atuacao" onclick="fecharModal('modal4')">&times;</span>
+      <h2>Educação em Saúde</h2>
+      <p>Disponibilização de conteúdos educativos digitais e promoção de ações de conscientização para fortalecer o
+        conhecimento da população sobre cuidados preventivos, doenças crônicas, vacinação e muito mais.</p>
+    </div>
   </div>
-</div>
 
-<div id="modal2" class="modal-atuacao">
-  <div class="modal-atuacao-content">
-    <span class="close-btn-atuacao" onclick="fecharModal('modal2')">&times;</span>
-    <h2>Integração de Dados</h2>
-    <p>Utilização de informações provenientes de diferentes fontes oficiais como o SINAN, e-SUS, registros de situação vacinal e dados de atendimentos para oferecer uma visão completa e integrada da saúde no município.</p>
-  </div>
-</div>
 
-<div id="modal3" class="modal-atuacao">
-  <div class="modal-atuacao-content">
-    <span class="close-btn-atuacao" onclick="fecharModal('modal3')">&times;</span>
-    <h2>Dashboards Interativos</h2>
-    <p>Ferramentas visuais com indicadores-chave de saúde, gráficos dinâmicos e mapas de distribuição territorial, que possibilitam a análise em tempo real da situação de saúde e apoiam a tomada de decisão.</p>
-  </div>
-</div>
-
-<div id="modal4" class="modal-atuacao">
-  <div class="modal-atuacao-content">
-    <span class="close-btn-atuacao" onclick="fecharModal('modal4')">&times;</span>
-    <h2>Educação em Saúde</h2>
-    <p>Disponibilização de conteúdos educativos digitais e promoção de ações de conscientização para fortalecer o conhecimento da população sobre cuidados preventivos, doenças crônicas, vacinação e muito mais.</p>
-  </div>
-</div>
-
-  
 
   <footer class="footer">
     <div class="footer-section footer-left">
@@ -196,14 +202,18 @@
     </div>
 
     <div class="footer-section footer-center">
-      <h3>Contato</h3>
-      <p><strong>Endereço:</strong> Rua Exemplo, 123</p>
-      <p>Bairro Modelo, Cidade Nova</p>
-      <p>CEP: 12345-678, Brasil</p>
-      <p><strong>E-mail:</strong> <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
 
+      <h3>Benefícios</h3>
+      <p>Fortalecemos a vigilância em saúde, promovemos
+        ações preventivas e democratizamos o acesso
+        à informação para uma saúde mais eficiente e acessível.</p>
+
+      <div class="contato">
+        <h3>Contato</h3>
+            <p>Telefone: (86) 9 0000-0000</p>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@exemplo.com">contato@petsaude.com</a></p>
+      </div>
     </div>
-
 
     <div class="footer-section footer-right" id="contato">
       <h3>Fale Conosco</h3>

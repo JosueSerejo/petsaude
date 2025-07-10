@@ -196,10 +196,9 @@ header::before {
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
-
-.btn-card:hover,
-.noticia-card a:hover {
-  background-color: #00e0ff;
+ 
+.btn-card:hover{
+  background-color: #e65a29;
   color: #002e4e;
   transform: translateY(-2px);
 }
@@ -308,6 +307,9 @@ header::before {
   z-index: 2;
 }
 
+.estatistica-item .fas {
+  color: #e65a29;
+}
 .estatistica-item {
   flex: 1;
   min-width: 200px;
@@ -330,45 +332,6 @@ header::before {
 .estatistica-item .descricao {
   font-size: 1.1em;
   opacity: 0.8;
-}
-
-/* ----------- NOTÍCIAS ----------- */
-.noticias-section {
-  padding: 40px 20px;
-  background-color: #f0f0f0;
-}
-
-.noticias-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.noticia-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: calc(33.333% - 20px);
-  min-width: 300px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.noticia-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #002e4e;
-}
-
-.noticia-card p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 15px;
 }
 
 /* ----------- FOOTER ----------- */
@@ -411,6 +374,11 @@ header::before {
 }
 
 .footer-center {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.contato p{
   text-align: center;
   margin-top: 20px;
 }
@@ -439,6 +407,7 @@ header::before {
   margin-bottom: 10px;
   font-size: 1.2em;
   text-align: center;
+  color: #e65a29;
 }
 
 
@@ -473,7 +442,8 @@ header::before {
 }
 
 .contact-form button {
-  background-color: #007bff;
+  justify-content: center;
+  background-color: #e65a29;
   color: #fff;
   padding: 8px 15px;
   border: none;
@@ -506,7 +476,6 @@ header::before {
   text-align: center;
 }
 
-
 .atuacao-container {
   display: flex;
   flex-wrap: wrap;
@@ -520,6 +489,7 @@ header::before {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 260px;
+  height: 180px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
