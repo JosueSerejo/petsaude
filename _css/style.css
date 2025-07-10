@@ -42,7 +42,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(2, 34, 66, 0.497);
+  background-color: rgba(0, 54, 105, 0.615);
 }
 
 .navbar {
@@ -51,7 +51,7 @@ header::before {
   align-items: center;
   padding: 15px 60px;
   background: linear-gradient(to bottom,
-      rgba(0, 46, 78, 0.85) 0%,
+      rgba(0, 5, 8, 0.85) 0%,
       rgba(12, 26, 36, 0.5) 60%,
       rgba(12, 26, 36, 0.0) 100%);
   position: relative;
@@ -379,6 +379,26 @@ header::before {
   text-align: justify;
   margin-top: 20px;
 }
+
+.sociais {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.sociais a {
+  color: white; /* Ícones brancos */
+  font-size: 25px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.sociais a:hover {
+  transform: scale(1.2);
+  color: #ff8800; /* Laranja de destaque no hover, opcional */
+}
+
+/* ----------- CONTATO ----------- */
 
 .contato {
   margin-top: 30px;
