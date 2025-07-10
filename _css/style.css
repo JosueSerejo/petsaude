@@ -196,10 +196,10 @@ header::before {
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
- 
-.btn-card:hover{
+
+.btn-card:hover {
   background-color: #e65a29;
-  color: #002e4e;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
@@ -310,6 +310,7 @@ header::before {
 .estatistica-item .fas {
   color: #e65a29;
 }
+
 .estatistica-item {
   flex: 1;
   min-width: 200px;
@@ -378,7 +379,7 @@ header::before {
   margin-top: 20px;
 }
 
-.contato p{
+.contato p {
   text-align: center;
   margin-top: 20px;
 }
@@ -454,7 +455,8 @@ header::before {
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: #ffffff;
+  color: #e65a29;
 }
 
 /* ----------- COPYRIGHT ----------- */
@@ -492,6 +494,8 @@ header::before {
   height: 180px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  position: relative;
+
 }
 
 .atuacao-card:hover {
@@ -502,6 +506,25 @@ header::before {
   color: #2980b9;
   margin-bottom: 10px;
 }
+
+.ver {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 18px;
+  color: #2980b9;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 6px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.atuacao-card:hover .ver {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+
 
 /* ----------- Popup modal -------------- */
 .modal-atuacao {
@@ -534,10 +557,4 @@ header::before {
   font-size: 24px;
   color: #888;
   cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .atuacao-card {
-    width: 100%;
-  }
 }

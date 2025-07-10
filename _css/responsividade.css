@@ -186,3 +186,10 @@
     margin: 10px auto;
   }
 }
+
+
+@media (max-width: 600px) {
+  .atuacao-card {
+    width: 100%;
+  }
+}
