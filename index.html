@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saúde Parnaíba</title>
+  <title>PET-Saúde</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="/_css/style.css">
@@ -13,7 +13,7 @@
 
 <body>
 
-  <header>
+  <header id="inicio">
     <nav class="navbar">
       <div class="logo">
         <img src="/_img/logo/logoptbr.png" alt="Logo Saúde Parnaíba">
@@ -24,16 +24,16 @@
         <span class="bar"></span>
       </button>
       <ul class="nav-links">
-        <li><a href="#" class="ativo">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#inicio" class="ativo">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#login">Login</a></li>
       </ul>
-    </nav>
 
-    <div class="title">
-      <h1>Transformando a saúde em Parnaíba-PI através da inovação.</h1>
-    </div>
+
+      <div class="title">
+        <h1>Transformando a saúde em Parnaíba-PI através da inovação.</h1>
+      </div>
 
   </header>
 
@@ -44,84 +44,170 @@
       <div class="card card-vacinacao">
         <h3>Vacinação</h3>
         <p>Mantenha sua carteira de vacinação em dia e proteja-se.</p>
-        <a href="#" class="btn-card">Saiba mais</a>
+        <a href="" class="btn-card">Saiba mais</a>
       </div>
 
       <div class="card card-unidades">
         <h3>Unidades de Saúde</h3>
         <p>Encontre a unidade de saúde mais próxima de você.</p>
-        <a href="#" class="btn-card">Saiba mais</a>
+        <a href="" class="btn-card">Saiba mais</a>
       </div>
 
       <div class="card card-agendamento">
         <h3>Epidemiologia</h3>
         <p>Tenha informações sobre surtos e epidemias.</p>
-        <a href="#" class="btn-card">Saiba mais</a>
+        <a href="" class="btn-card">Saiba mais</a>
       </div>
 
       <div class="card card-noticias">
         <h3>Educação em Saúde</h3>
         <p>Acesse materiais digitais educativos e participe de ações de educação.</p>
-        <a href="#" class="btn-card">Saiba mais</a>
+        <a href="" class="btn-card">Saiba mais</a>
       </div>
     </div>
   </section>
 
-  <section>
-    <section>
-      <div class="about-container-v2">
-        <div class="about-text-v2">
-          <h2>SOBRE</h2>
-          <p> Nossa plataforma foi desenvolvida com o objetivo de otimizar a comunicação
-            e gestão da Atenção Primária à Saúde em Parnaíba-PI.
-            Buscamos auxiliar na comunicação entre as Unidades Básicas de Saúde (UBS) e a população do município de
-            Parnaíba-PI ,
-            além de gerenciar dados gerados nos atendimentos do SUS e otimizar a análise da situação de saúde. Aqui,
-            você pode consultar dados sobre situação vacinal, informações de notificações (SINAN), doenças crônicas
-            (e-SUS)
-            e atendimentos na atenção primária. Mais do que uma solução tecnológica, democratizamos o conhecimento
-            e incentivamos o uso dos dados em saúde para o fortalecimento da vigilância em saúde ,
-            aprimoramento de ações de prevenção e controle, e atendimentos mais eficazes. </p>
+  <section id="sobre">
+    <div class="about-container-v2">
+      <div class="about-text-v2">
+        <h2>SOBRE</h2>
+        <p> Nossa plataforma foi desenvolvida com o objetivo de otimizar a comunicação
+          e gestão da Atenção Primária à Saúde em Parnaíba-PI.
+          Buscamos auxiliar na comunicação entre as Unidades Básicas de Saúde (UBS) e a população do município de
+          Parnaíba-PI ,
+          além de gerenciar dados gerados nos atendimentos do SUS e otimizar a análise da situação de saúde. Aqui,
+          você pode consultar dados sobre situação vacinal, informações de notificações (SINAN), doenças crônicas
+          (e-SUS)
+          e atendimentos na atenção primária. Mais do que uma solução tecnológica, democratizamos o conhecimento
+          e incentivamos o uso dos dados em saúde para o fortalecimento da vigilância em saúde ,
+          aprimoramento de ações de prevenção e controle, e atendimentos mais eficazes. </p>
 
-          <p>Este projeto é fruto de uma colaboração multidisciplinar ,
-            envolvendo os cursos de Bacharelado em Enfermagem , Bacharelado
-            em Odontologia e Curso Superior de Tecnologia em Sistemas de Computação da Universidade Estadual do Piauí -
-            UESPI</p>
-        </div>
-        <div class="about-single-image">
-          <img src="/_img/logo/logo.png" alt="Imagem representativa do projeto">
-        </div>
+        <p>Este projeto é fruto de uma colaboração multidisciplinar ,
+          envolvendo os cursos de Bacharelado em Enfermagem , Bacharelado
+          em Odontologia e Curso Superior de Tecnologia em Sistemas de Computação da Universidade Estadual do Piauí -
+          UESPI</p>
       </div>
-    </section>
-
-
-    <section class="estatisticas-section">
-      <div class="estatisticas-container">
-        <div class="estatistica-item">
-          <i class="fas fa-users"></i>
-          <p class="numero">+150 mil</p>
-          <p class="descricao">habitantes</p>
-        </div>
-        <div class="estatistica-item">
-          <i class="fas fa-hospital"></i>
-          <p class="numero">+20</p>
-          <p class="descricao">UBSs</p>
-        </div>
-        <div class="estatistica-item">
-          <i class="fas fa-syringe"></i>
-          <p class="numero">+50 mil</p>
-          <p class="descricao">Vacinações</p>
-        </div>
-        <div class="estatistica-item">
-          <i class="fas fa-viruses"></i>
-          <p class="numero">+2 mil</p>
-          <p class="descricao">Notificações</p>
-        </div>
+      <div class="about-single-image">
+        <img src="/_img/logo/logo.png" alt="Imagem representativa do projeto">
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <script src="/_js/script.js"></script>
+  <section class="estatisticas-section">
+    <div class="estatisticas-container">
+      <div class="estatistica-item">
+        <i class="fas fa-users"></i>
+        <p class="numero">+150 mil</p>
+        <p class="descricao">habitantes</p>
+      </div>
+      <div class="estatistica-item">
+        <i class="fas fa-hospital"></i>
+        <p class="numero">+20</p>
+        <p class="descricao">UBSs</p>
+      </div>
+      <div class="estatistica-item">
+        <i class="fas fa-syringe"></i>
+        <p class="numero">+50 mil</p>
+        <p class="descricao">Vacinações</p>
+      </div>
+      <div class="estatistica-item">
+        <i class="fas fa-viruses"></i>
+        <p class="numero">+2 mil</p>
+        <p class="descricao">Notificações</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="noticias-section">
+    <h2 class="noticias-titulo">NOTÍCIAS</h2>
+    <div class="noticias-container">
+      <article class="noticia-card">
+        <img src="/_img/noticias/vacin.jpg" alt="Pessoa recebendo vacina" class="noticia-imagem">
+        <div class="noticia-conteudo">
+          <p class="noticia-data">17 jan. 2024</p>
+          <h3 class="noticia-card-titulo">Consulta pública de dados de vacinação por bairro</h3>
+          <p class="noticia-descricao">A nova funcionalidade lançada esta semana permite que qualquer cidadão acesse,
+            de forma visual, os dados de cobertura vacinal em Parnaíba, filtrando por bairro e faixa etária. A medida
+            visa ampliar a ...</p>
+          <a href="" class="ler-mais">ler mais</a>
+        </div>
+      </article>
+
+      <article class="noticia-card">
+        <img src="/_img/noticias/vacin.jpg" alt="Pessoa recebendo vacina" class="noticia-imagem">
+        <div class="noticia-conteudo">
+          <p class="noticia-data">17 jan. 2024</p>
+          <h3 class="noticia-card-titulo">Consulta pública de dados de vacinação por bairro</h3>
+          <p class="noticia-descricao">A nova funcionalidade lançada esta semana permite que qualquer cidadão acesse,
+            de forma visual, os dados de cobertura vacinal em Parnaíba, filtrando por bairro e faixa etária. A medida
+            visa ampliar a ...</p>
+          <a href="" class="ler-mais">ler mais</a>
+        </div>
+      </article>
+
+      <article class="noticia-card">
+        <img src="/_img/noticias/vacin.jpg" alt="Pessoa recebendo vacina" class="noticia-imagem">
+        <div class="noticia-conteudo">
+          <p class="noticia-data">17 jan. 2024</p>
+          <h3 class="noticia-card-titulo">Consulta pública de dados de vacinação por bairro</h3>
+          <p class="noticia-descricao">A nova funcionalidade lançada esta semana permite que qualquer cidadão acesse,
+            de forma visual, os dados de cobertura vacinal em Parnaíba, filtrando por bairro e faixa etária. A medida
+            visa ampliar a ...</p>
+          <a href="" class="ler-mais">ler mais</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-section footer-left">
+      <h3>Apoio</h3>
+      <div class="footer-images">
+        <img src="/_img/logo/gov.png" alt="Imagem 1 do Rodapé">
+        <img src="/_img/logo/saude.png" alt="Imagem 2 do Rodapé">
+        <img src="/_img/logo/phb.png" alt="Imagem 3 do Rodapé">
+        <img src="/_img/logo/sus.png" alt="Imagem 4 do Rodapé">
+      </div>
+      <div class="uespi">
+        <h3>Realização</h3>
+        <img src="/_img/logo/uespi.png" alt="Imagem 5 do Rodapé">
+      </div>
+    </div>
+
+    <div class="footer-section footer-center">
+      <h3>Contato</h3>
+      <p><strong>Endereço:</strong> Rua Exemplo, 123</p>
+      <p>Bairro Modelo, Cidade Nova</p>
+      <p>CEP: 12345-678, Brasil</p>
+      <p><strong>E-mail:</strong> <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+
+    </div>
+
+
+    <div class="footer-section footer-right" id="contato">
+      <h3>Fale Conosco</h3>
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" placeholder="Sua mensagem..." required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </footer>
+
+  <div class="footer-copyright">
+    <p>&copy; 2025 PET-Saúde. Todos os direitos reservados.</p>
+  </div>
+
+  <script src="/_js/script.js"></script>
+
 </body>
 
 </html>

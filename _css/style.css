@@ -1,7 +1,10 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +12,19 @@ body {
   background-color: #f0f0f0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #002e4e;
+}
+
+/* ----------- HEADER ----------- */
 header {
   background-image: url('/_img/sala-de-espera-da-clinica-scaled.jpg');
   background-size: cover;
@@ -17,6 +33,16 @@ header {
   position: relative;
   color: white;
   overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 34, 66, 0.497);
 }
 
 .navbar {
@@ -53,28 +79,6 @@ header {
   color: #00e0ff;
 }
 
-.title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.title h1 {
-  font-size: 2.5rem;
-  line-height: 1.4;
-  max-width: 800px;
-}
-
-h2 {
-  text-align: center;
-  margin: 20px 0;
-  color: #002e4e;
-}
-
 .nav-links a.ativo {
   position: relative;
 }
@@ -91,7 +95,24 @@ h2 {
   transition: all 0.3s ease;
 }
 
-/* --- CARDS --- */
+.title {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 5;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+/* ----------- CARDS DE SERVIÇO ----------- */
 .info-cards-section {
   padding: 40px 20px;
   background-color: #f0f0f0;
@@ -121,6 +142,8 @@ h2 {
   overflow: hidden;
   color: white;
   min-height: 250px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card::before {
@@ -147,7 +170,6 @@ h2 {
 .card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: white;
 }
 
 .card p {
@@ -157,18 +179,21 @@ h2 {
   flex-grow: 1;
 }
 
-.btn-card {
+/* Botão genérico */
+.btn-card,
+.noticia-card a {
   display: inline-block;
   text-decoration: none;
-  color: #00e0ff;
+  color: #1d1e1f;
   font-weight: bold;
-  border: 1px solid #00e0ff;
+  border: 1px solid #000000;
   padding: 8px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.btn-card:hover {
+.btn-card:hover,
+.noticia-card a:hover {
   background-color: #00e0ff;
   color: #002e4e;
   transform: translateY(-2px);
@@ -176,32 +201,22 @@ h2 {
 
 .card-vacinacao {
   background-image: url('/_img/cards/vacina.jpeg');
-  background-size: cover;
-  background-position: center;
 }
 
 .card-unidades {
   background-image: url('/_img/cards/ubs.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .card-agendamento {
   background-image: url('/_img/cards/epidemia.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .card-noticias {
   background-image: url('/_img/cards/educ.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 
-
-/* --- ABOUT --- */
-
+/* ----------- SOBRE ----------- */
 .about-container-v2 {
   display: flex;
   align-items: center;
@@ -220,14 +235,13 @@ h2 {
   text-align: justify;
   line-height: 1.8;
   padding-right: 20px;
-  position: relative;
   min-width: 300px;
+  position: relative;
 }
 
 .about-text-v2 p {
   margin-bottom: 15px;
 }
-
 
 .about-text-v2::after {
   content: '';
@@ -245,30 +259,26 @@ h2 {
   justify-content: center;
   align-items: center;
   min-width: 350px;
-  height: auto;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .about-single-image img {
-  width: 100%;
-  height: auto;
-  display: block;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-
-/* --- ESTATISTICAS --- */
+/* ----------- ESTATÍSTICAS ----------- */
 .estatisticas-section {
   background-image: url('/_img/estatisticas/fundo.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   text-align: center;
   position: relative;
   overflow: hidden;
   margin-top: 1em;
+  padding: 40px 20px;
+  min-height: 300px;
 }
 
 .estatisticas-section::before {
@@ -289,33 +299,196 @@ h2 {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  z-index: 2;
   position: relative;
+  z-index: 2;
 }
 
 .estatistica-item {
   flex: 1;
   min-width: 200px;
-  padding: 20px;
+  padding: 21px;
   text-align: center;
   color: #fff;
-  box-sizing: border-box;
   margin: 10px;
 }
 
 .estatistica-item i {
   font-size: 3em;
   margin-bottom: 15px;
-  color: #fff;
 }
 
 .estatistica-item .numero {
   font-size: 2.2em;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
 .estatistica-item .descricao {
   font-size: 1.1em;
   opacity: 0.8;
 }
+
+/* ----------- NOTÍCIAS ----------- */
+.noticias-section {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+
+.noticias-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noticia-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.noticia-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #002e4e;
+}
+
+.noticia-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* ----------- FOOTER ----------- */
+.footer {
+  background-color: #000; /* Fundo de fallback, caso a imagem não carregue */
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.952)), 
+    url(/_img/sala-de-espera-da-clinica-scaled.jpg);
+  background-size: cover; 
+  background-position: center; 
+
+  background-repeat: no-repeat; 
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  padding: 10px;
+}
+
+.footer-left {
+  text-align: center;
+}
+
+.footer-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.footer-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-center p {
+  margin: 4px 0;
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+.footer-center a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  margin-top: 20px;
+}
+
+.footer h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+
+/* ----------- CONTATO ----------- */
+.contact-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #555;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ----------- COPYRIGHT ----------- */
+.footer-copyright {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 0.85em;
+  border-top: 1px solid white;
+}
+
+

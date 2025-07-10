@@ -17,6 +17,7 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* Animação do menu aberto (X) */
 .hamburger-menu.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -29,88 +30,17 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* --- ESTILOS GERAIS PARA A SEÇÃO DE ESTATÍSTICAS (FORA DAS MEDIA QUERIES) --- */
-.estatisticas-section {
-  background-image: url('/_img/estatisticas/fundo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 40px 20px;
-  /* Ajustei o padding vertical para ter mais altura */
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  margin-top: 1em;
-}
+/* ----------- MEDIA QUERIES ----------- */
 
-.estatisticas-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.732);
-  z-index: 1;
-}
-
-.estatisticas-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* ESSENCIAL: Permite que os itens quebrem para a próxima linha */
-  justify-content: space-around;
-  /* Distribui o espaço igualmente */
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-}
-
-.estatistica-item {
-  flex: 1;
-  /* Permite que os itens cresçam/encolham para 4 por linha em telas grandes */
-  min-width: 200px;
-  /* Garante um tamanho mínimo para evitar que fiquem muito pequenos */
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  box-sizing: border-box;
-  /* Inclui padding e borda na largura do elemento */
-  margin: 10px;
-  /* Adicione uma margem padrão para espaçamento entre os itens */
-}
-
-.estatistica-item i {
-  font-size: 3em;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-.estatistica-item .numero {
-  font-size: 2.2em;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.estatistica-item .descricao {
-  font-size: 1.1em;
-  opacity: 0.8;
-}
-
-/* --- MEDIA QUERIES --- */
-
-/* Telas de até 992px */
+/* Até 992px: 3 cards por linha */
 @media (max-width: 992px) {
   .card {
     width: calc(33.333% - 14px);
   }
 }
 
-/* Telas de até 850px*/
+/* Até 850px: empilha seção "sobre" */
 @media (max-width: 850px) {
-
-  /* EMPILHAR O SOBRE */
   .about-container-v2 {
     flex-direction: column;
     align-items: flex-start;
@@ -128,23 +58,20 @@
     margin-top: 20px;
     width: 100%;
     min-width: unset;
-    height: auto;
-  }
-
-  .about-single-image img {
-    width: 100%;
-    height: auto;
   }
 }
 
-/* Telas de até 768px (AQUI VÃO AS REGRAS PARA 2 ITENS DE ESTATÍSTICAS) */
+/* Até 768px: ativar menu hamburger + ajustes gerais */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
   }
 
+  .hamburger-menu {
+    display: block;
+  }
+
   .nav-links {
-    display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -157,9 +84,8 @@
     transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
     z-index: 9;
     align-items: center;
-    justify-content: center;
-    gap: 0;
     padding: 0;
+    gap: 0;
   }
 
   .nav-links.active {
@@ -173,17 +99,9 @@
     margin-bottom: 10px;
   }
 
-  .nav-links li:last-child {
-    margin-bottom: 0;
-  }
-
   .nav-links a {
+    display: block;
     padding: 10px 0;
-    display: block;
-  }
-
-  .hamburger-menu {
-    display: block;
   }
 
   .title h1 {
@@ -199,20 +117,38 @@
     width: calc(50% - 15px);
   }
 
-  /* REGRAS DE ESTATÍSTICAS PARA 2 ITENS POR LINHA AQUI */
   .estatisticas-container {
     justify-content: center;
   }
 
   .estatistica-item {
-    flex: 0 0 calc(50% - 40px);
-    max-width: calc(50% - 40px);
-    margin: 15px;
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin: 1%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  .footer-section {
+    max-width: 95%;
+    text-align: center;
+  }
+
+  .footer-images {
+    margin-bottom: 15px;
+  }
+
+  .footer-center p {
+    text-align: center;
   }
 }
 
-
-/* Telas de até 480px (AQUI VÃO AS REGRAS PARA 1 ITEM DE ESTATÍSTICAS) */
+/* Até 480px: visual mobile */
 @media (max-width: 480px) {
   .navbar {
     padding: 10px 15px;
@@ -237,10 +173,9 @@
     min-width: unset;
   }
 
-  /* REGRAS DE ESTATÍSTICAS PARA 1 ITEM POR LINHA AQUI */
   .estatistica-item {
-    flex: 0 0 calc(100% - 40px);
-    max-width: calc(100% - 40px);
-    margin: 10px 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 10px auto;
   }
 }
