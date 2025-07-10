@@ -42,7 +42,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 54, 105, 0.615);
+  background-color: rgba(51, 64, 97, 0.555);
 }
 
 .navbar {
