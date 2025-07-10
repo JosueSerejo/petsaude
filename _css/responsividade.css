@@ -105,8 +105,15 @@
   }
 
   .title h1 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-align: center;
+    padding-top: 4em;
+  }
+
+  .title h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 0.5em;
   }
 
   .cards-container {
